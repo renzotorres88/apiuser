@@ -125,4 +125,13 @@ DB_PASSWORD=\<contraseña DB\><br/>
         "url": "\<url-image\>"
     }
 
+# Tests
+En el proyecto también se podrán encontrar test unitarios de las distintas funcionalidades de la API. Los mismos pueden correrse con el comando ./vendor/bin/phpunit desde el root del proyecto.<br>
+Dichos Tests se encuentran en la clase UserApiTest.php dentro del directorio tests/Unit.<br>
+Las pruebas creadas son
+* testAddUserFunction: validación de la creación correcta de un usuario
+* testAddUserWithoutNameAndEmailExisting: valida que la creación del usuario falla si no se completa el campo name y si el email ingresado ya se encuentra cargado en la base de datos.
+* testGetUserDataFunction: Retorna los datos del usuario solicitado
+* testUpdateUserDataFunction: valida el correcto funcionamiento de la función de actualización de los datos del Usuario.
+* testDeleteUserFunction: validación de la eliminación de un usuario.
 
